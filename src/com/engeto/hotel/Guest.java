@@ -43,6 +43,10 @@ public class Guest {
         return "Name: " + firstName + " " + surname + ". Date of birth: " + dateOfBirth;
     }
 
+    public String getName() {
+        return getFirstName() + " " + getSurname();
+    }
+
     @Override
     public String toString() {
         return getDescription();

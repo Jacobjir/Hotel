@@ -28,15 +28,30 @@ public class Main {
         Room room2 = new Room(2,1,true,true,BigDecimal.valueOf(1000));
         Room room3 = new Room(3,3,false,true,BigDecimal.valueOf(2400));
 
-        Booking booking1 = new Booking(1,(adelaMalikova.getFirstName() + " " + adelaMalikova.getSurname()),
+
+        List<Room> roomList = new ArrayList<>();
+
+        roomList.add(room1);
+        roomList.add(room2);
+        roomList.add(room3);
+
+        System.out.println("All rooms in the hotel:" + roomList);
+
+
+        Booking booking1 = new Booking(1, adelaMalikova.getName(),
                 LocalDate.of(2021,7,19),LocalDate.of(2021,7,26));
-        Booking booking2 = new Booking(3,(adelaMalikova.getFirstName() + " " + adelaMalikova.getSurname() + " and " + janDvoracek.getFirstName() + " " + janDvoracek.getSurname()),
+        Booking booking2 = new Booking(3, adelaMalikova.getName() + " and " + janDvoracek.getName(),
                 LocalDate.of(2021,9,3),LocalDate.of(2021,9,14));
+
+
+        // Rezervace s automatickým datem ode dneška na 6 dní
+        Booking booking3 = new Booking(2,adelaMalikova.getName());
 
         List<Booking> bookingList = new ArrayList<>();
 
         bookingList.add(booking1);
         bookingList.add(booking2);
+        bookingList.add(booking3);
 
         System.out.println("List of all bookings:");
 

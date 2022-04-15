@@ -17,6 +17,12 @@ public class Booking {
         this.reservationEnd = reservationEnd;
     }
 
+
+    public Booking(int roomNum, String host) {
+        this(roomNum, host,LocalDate.now(),LocalDate.now().plusDays(6));
+    }
+
+
     public int getRoomNum() {
         return roomNum;
     }

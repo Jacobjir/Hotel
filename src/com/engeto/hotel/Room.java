@@ -8,7 +8,7 @@ public class Room {
     private int numOfBeds;
     private boolean hasBalcony;
     private boolean seaView;
-    private BigDecimal pricePerNight = BigDecimal.valueOf(1300.9);
+    private BigDecimal pricePerNight;
 
 
     public Room(int roomNumber, int numOfBeds, boolean hasBalcony, boolean seaView, BigDecimal pricePerNight) {
