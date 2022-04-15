@@ -60,7 +60,7 @@ public class Room {
     }
 
     public String getDescription(){
-        return "Room number: " + roomNumber + ". Number of beds: "
+        return "Room " + roomNumber + " Number of beds: "
                 + numOfBeds + ". Has balcony: " + hasBalcony + ". Has sea-view: " + seaView + ". Price per night: " + pricePerNight + " Kč";
     }
 

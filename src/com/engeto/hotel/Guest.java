@@ -40,7 +40,7 @@ public class Guest {
     }
 
     public String getDescription() {
-        return "Name: " + firstName + " " + surname + ". Date of birth: " + dateOfBirth;
+        return "Name: " + firstName + " " + surname + ". Born: " + dateOfBirth;
     }
 
     public String getName() {
