@@ -20,6 +20,8 @@ public class Main {
         guestList.add(adelaMalikova);
         guestList.add(janDvoracek);
 
+        // TEST GITU
+
         System.out.println("Available information about guests: " + guestList);
 
 
