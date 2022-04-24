@@ -12,8 +12,6 @@ public class Main {
         Guest adelaMalikova = new Guest("Adéla", "Malíková", LocalDate.of(1993,3,13));
         Guest janDvoracek = new Guest("Jan","Dvořáček",LocalDate.of(1995,5,5));
 
-        // Původně jsem to měl takto, ale myslím si, že je určitě lepší použít List
-        // System.out.println("Information about guests: " + adelaMalikova.getDescription() + "; " + janDvoracek.getDescription());
 
         List<Guest> guestList = new ArrayList<>();
 
